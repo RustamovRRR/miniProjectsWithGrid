@@ -197,6 +197,7 @@ p {
 
 .card-center {
   display: grid;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
   grid-template-columns: repeat(
     auto-fill,
@@ -242,6 +243,7 @@ p {
   }
   .tiles img {
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .tile-1 {
