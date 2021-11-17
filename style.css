@@ -287,6 +287,7 @@ p {
 }
 .navbar li {
   list-style-type: none;
+  text-align: center;
 }
 .navbar a {
   padding: 1rem;
@@ -336,5 +337,40 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main {
+    grid-template-columns: 200px 1fr 50px;
+    grid-template-rows: auto 1fr auto;
+  }
+  .header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .navbar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .footer {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+  }
+  .sidebar {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: 100%;
+    background: var(--darkGrey);
+  }
+  .navbar ul {
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: 100%;
   }
 }
