@@ -156,7 +156,7 @@ p {
   padding: 4rem 0;
 }
 .card-center {
-  width: 80vw;
+  width: 90vw;
   max-width: 1170px;
   margin: 2rem auto;
 }
@@ -178,7 +178,7 @@ p {
   color: var(--primaryColor);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .card-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,4 +191,13 @@ p {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
   }
+} */
+.card-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(calc((1170px - 4rem) / 3), 1fr)
+  );
+  justify-items: center;
 }
