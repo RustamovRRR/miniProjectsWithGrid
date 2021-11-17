@@ -163,6 +163,9 @@ p {
 .card {
   border: 1px solid var(--darkGrey);
   margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 .card-info {
   padding: 1rem;
@@ -192,6 +195,7 @@ p {
     column-gap: 1.5rem;
   }
 } */
+
 .card-center {
   display: grid;
   column-gap: 2rem;
