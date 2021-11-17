@@ -112,3 +112,36 @@ p {
     ),
     url(./setup-files/images/image-3.jpeg) center/cover no-repeat fixed;
 }
+/* 
+----------------------- hero project ---------------------------
+*/
+.hero-header {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(rgba(131, 34, 50, 0.75), rgba(131, 34, 50, 0.5)),
+    url("./setup-files/images/image-2.jpeg") center/cover no-repeat;
+  min-height: 100vh;
+  color: var(--mainWhite);
+}
+.hero-banner {
+  text-align: center;
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(131, 34, 50, 0.75), rgba(131, 34, 50, 0.5)),
+      url("./setup-files/images/image-3.jpeg") center/cover no-repeat fixed;
+  }
+}
