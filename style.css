@@ -70,3 +70,45 @@ p {
   background: var(--primaryColor);
   color: var(--offWhite);
 }
+/* 
+---------------------- main navbar --------------------------
+*/
+.main-nav {
+  background: var(--darkGrey);
+  padding: 0 2rem;
+}
+.main-nav li {
+  list-style-type: none;
+}
+.main-nav a {
+  text-transform: capitalize;
+  color: var(--primaryColor);
+  display: block;
+  padding: 1rem 0;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.main-nav a:hover {
+  color: var(--mainBlack);
+}
+@media screen and (min-width: 992px) {
+  .main-nav ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+  .main-nav a {
+    text-align: center;
+  }
+}
+.path {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(175, 175, 175, 0.5),
+      rgba(175, 175, 175, 0.5)
+    ),
+    url(./setup-files/images/image-3.jpeg) center/cover no-repeat fixed;
+}
